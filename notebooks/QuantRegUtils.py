@@ -1,6 +1,5 @@
 import time
 
-import basicFunctions as bf
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.style
@@ -10,10 +9,12 @@ from sklearn.model_selection import train_test_split
 from tensorflow import keras
 from tensorflow.keras import layers
 
+from . import basicFunctions as bf
+
 # Some plotting preferences
-mpl.style.use("seaborn-bright")
-font = {"family": "sans-serif", "weight": "bold", "size": 15}
-mpl.rc("font", **font)
+# mpl.style.use("seaborn-bright")
+# font = {"family": "sans-serif", "weight": "bold", "size": 15}
+# mpl.rc("font", **font)
 
 # colorblind-friendly colors
 colors = [
